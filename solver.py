@@ -57,7 +57,7 @@ class Solver:
 
     def calc_p00_check(self):
         mult = 1
-        for i in range(self.inf):
+        for i in range(1, self.inf):
             mult *= self.inA * (self.b - self.a*self.inB*self.inG**i) / (self.inA*self.b - self.a*self.inB*self.inG**i)
         return (1 - self.rho) * (1/mult)
 
