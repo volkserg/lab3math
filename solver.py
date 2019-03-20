@@ -17,6 +17,8 @@ class Solver:
         self.P0 = 1 - self.rho
         self.inf = infin
 
+    # -------------------------1st-----------------
+
     def calc_q0(self, i):
         assert i >= 0
         if len(self.q0) <= i:
@@ -66,3 +68,6 @@ class Solver:
             return self.P0 + self.P1 * self.b
         else:
             return self.calc_p1i(i-1) * self.inB
+
+    #--------------------2nd-------------------------
+
