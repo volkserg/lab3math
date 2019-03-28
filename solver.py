@@ -171,6 +171,6 @@ class Solver:
         for i in range(1, self.inf):
             sum2 = 0
             for k in range(1, self.inf):
-                sum2 += k*self.calc_vk1(k,i-1)
+                sum2 += k*self.calc_vk1(k, i-1)
             sum1 += self.calc_pxi(i) * sum2
         return sum1
